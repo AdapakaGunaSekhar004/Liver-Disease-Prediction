@@ -1,5 +1,5 @@
 
-# 🧠 Liver Disease Prediction using Machine Learning
+#  Liver Disease Prediction using Machine Learning
 
 This project uses machine learning to classify liver disease based on patient data. It includes preprocessing, training a Random Forest model, evaluating performance, and visualizing insights using Seaborn and Matplotlib.
 

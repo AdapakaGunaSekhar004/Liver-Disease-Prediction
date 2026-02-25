@@ -1,40 +1,64 @@
+# Liver Disease Prediction using Machine Learning
 
-#  Liver Disease Prediction using Machine Learning
+Predicted liver disease in patients using a Random Forest classification model. 
+Performed end-to-end data cleaning, exploratory data analysis, and model evaluation 
+achieving **91.56% accuracy**.
 
-This project uses machine learning to classify liver disease based on patient data. It includes preprocessing, training a Random Forest model, evaluating performance, and visualizing insights using Seaborn and Matplotlib.
+## Dataset
+- **Records:** 583 patient records
+- **Features:** Age, protein levels, bilirubin, enzyme markers, disease category
+- **Source:** UCI / Kaggle Liver Patient Dataset
 
-## 📂 Dataset
-The dataset contains 615 patient records with features like age, protein levels, enzyme markers, and disease category.
+## Results
+| Metric | Score |
+|--------|-------|
+| Accuracy | 91.56% |
+| Model | Random Forest Classifier |
 
-## 🚀 Features
+## Features
 - Data preprocessing & cleaning
 - Categorical encoding
+- Exploratory Data Analysis (EDA)
 - Random Forest classification
-- Accuracy & classification report
+- Feature importance analysis
 - Visualizations:
   - Bar plot (average age by disease)
   - Strip plot (age distribution)
   - Box plot (bilirubin levels)
   - Feature importance chart
-  - Confusion matrix heatmap
+  - Correlation heatmap
+  - Confusion matrix
 
-## 🛠️ Tech Stack
+## Tech Stack
 - Python
 - Pandas, NumPy
 - Scikit-learn
 - Seaborn, Matplotlib
 
-## 🏁 How to Run
+## How to Run
 1. Clone the repository
-2. Place the dataset file `project-data.csv` in the project directory
-3. Run the script:
+```bash
+git clone https://github.com/AdapakaGunaSekhar004/Liver-Disease-Prediction.git
+```
+2. Install dependencies
+```bash
+pip install pandas numpy scikit-learn seaborn matplotlib
+```
+3. Place the dataset file `project-data.csv` in the project directory
+4. Run the script:
 ```bash
 python liver_prediction.py
 ```
 
-## 📌 Note
-This is an academic/portfolio project using sample medical data.
+## Key Insights
+- Bilirubin levels are the strongest indicator of liver disease
+- Enzyme readings (SGPT, SGOT) show high correlation with disease presence
+- Random Forest outperformed other models with 91.56% accuracy
 
----
+## Author
+**Adapaka Guna Sekhar**  
+[LinkedIn](https://www.linkedin.com/in/guna-sekhar-adapaka-6903ab23b) | 
+[GitHub](https://github.com/AdapakaGunaSekhar004) | 
+[Portfolio](https://adapakagunasekhar004.github.io/portfolioper/)
 
-**Author:** Adapaka Guna Sekhar
+> Note: This is an academic/portfolio project using sample medical data.
